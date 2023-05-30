@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/text')
+  getText(): string {
+    return 'This is random text';
+  }
 }
